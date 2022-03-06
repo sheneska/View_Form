@@ -60,6 +60,10 @@ namespace Smarter_Stoplight_Problem
             Refresh();
             //we also change the color property of the north stopligh object
             north_stoplight.ChangeColor("Green");
+            
+            //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
 
             //green for 9 seconds, yellow for 3 seconds, the rest is red, we technically need 
             //the timing for the green and yellow colors, and the red color is just a default color
@@ -121,6 +125,10 @@ namespace Smarter_Stoplight_Problem
             Refresh();
             //we also change the color property of the south stopligh object
             south_stoplight.ChangeColor("Green");
+            
+            //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
 
             //green for 9 seconds, yellow for 3 seconds, the rest is red, we technically need 
             //the timing for the green and yellow colors, and the red color is just a default color
@@ -172,6 +180,10 @@ namespace Smarter_Stoplight_Problem
                     North_Green_PX.BackColor = Color.Gray;
                     North_Yellow_PX.BackColor = Color.Gray;
                     Refresh();
+                    
+                    //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
                 }
                 //if 9 seconds have passed, we change the stoplight color to yellow
                 else if (ts_south.Seconds == 8)
@@ -183,6 +195,10 @@ namespace Smarter_Stoplight_Problem
                     South_Red_PX.BackColor = Color.Gray;
                     South_Green_PX.BackColor = Color.Gray;
                     Refresh();
+                    
+                    //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
                 }
             }
 
@@ -193,6 +209,11 @@ namespace Smarter_Stoplight_Problem
             South_Green_PX.BackColor = Color.Gray;
             South_Yellow_PX.BackColor = Color.Gray;
             Refresh();
+            
+            //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
+                
             //stop the stopwatch for the south light
             south_watch.Stop();
         }
@@ -222,6 +243,10 @@ namespace Smarter_Stoplight_Problem
             Refresh();
             //we also change the color property of the south stopligh object
             east_stoplight.ChangeColor("Green");
+            
+            //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
 
             //green for 9 seconds, yellow for 3 seconds, the rest is red, we technically need 
             //the timing for the green and yellow colors, and the red color is just a default color
@@ -281,6 +306,11 @@ namespace Smarter_Stoplight_Problem
 
             //refresh the GUI
             Refresh();
+            
+            //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
+            
             //we also change the color property of the south stopligh object
             west_stoplight.ChangeColor("Green");
 
@@ -321,6 +351,10 @@ namespace Smarter_Stoplight_Problem
                     East_Green_PX.BackColor = Color.Gray;
                     East_Red_PX.BackColor = Color.Gray;
                     Refresh();
+                    
+                    //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
                 }
                 //else if it is 5, 6 seconds have passed - total of 12 seconds for the east stoplight stopwatch: 
                 //we change east light color to red
@@ -333,6 +367,10 @@ namespace Smarter_Stoplight_Problem
                     East_Yellow_PX.BackColor = Color.Gray;
                     East_Green_PX.BackColor = Color.Gray;
                     Refresh();
+                    
+                    //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
                 }
                 //if 9 seconds have passed, we change the stoplight color to yellow
                 else if (ts_west.Seconds == 8)
@@ -344,6 +382,10 @@ namespace Smarter_Stoplight_Problem
                     West_Red_PX.BackColor = Color.Gray;
                     West_Green_PX.BackColor = Color.Gray;
                     Refresh();
+                    
+                    //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
                 }
             }
 
@@ -354,6 +396,10 @@ namespace Smarter_Stoplight_Problem
             West_Green_PX.BackColor = Color.Gray;
             West_Yellow_PX.BackColor = Color.Gray;
             Refresh();
+            
+            //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
 
             //we stop the stopwatch for the west light
             west_watch.Stop();
@@ -404,7 +450,11 @@ namespace Smarter_Stoplight_Problem
             West_Yellow_PX.BackColor = Color.Gray;
 
             Refresh();
-
+            
+            //we print the changes to the console
+            Console.WriteLine("{0, 6} {1, 15} {2, 11} {3, 15} {4, 15}", time_span_overall.Seconds.ToString(), north_stoplight.GetColour(),
+                south_stoplight.GetColour(), east_stoplight.GetColour(), west_stoplight.GetColour());
+                
             //so we keep the state of colors above until 10 seconds have passed
             while(ts_emergency.Seconds < 9)
             {
@@ -515,11 +565,6 @@ namespace Smarter_Stoplight_Problem
                 West_Red_PX.BackColor = Color.Gray;
             }
             Refresh();
-
-            Console.WriteLine("RESUMED:\nNORTH: " + north_stoplight.GetColour() + "\nSOUTH: " + south_stoplight.GetColour() +
-                "\nEAST: " + east_stoplight.GetColour() + "\nWEST: " + west_stoplight.GetColour());
-
-            Console.WriteLine("\n\nRESUMED AT: " + time_span_overall.Seconds);
         }
 
 
@@ -528,6 +573,10 @@ namespace Smarter_Stoplight_Problem
             //we trigger the global timer
             stopwatch_overall.Start();
             time_span_overall = stopwatch_overall.Elapsed;
+            
+            //we print the initial setup
+            Console.WriteLine("\n\n{0} {1, 12} {2, 12} {3, 15} {4, 15}", "Current Time", "North Light", "South Light", "East Light", "West Light");
+            Console.WriteLine("{0} {1, 12} {1, 12} {2, 15} {3, 15}", "____________", "___________", "___________", "__________", "__________");
 
             //The idea of the program:
             //CYCLE:
